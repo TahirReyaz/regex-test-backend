@@ -4,7 +4,8 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
 
-const frontendUrl = "http://localhost:3000";
+// const frontendUrl = "http://localhost:3000";
+const frontendUrl = "https://tahirreyaz.github.io/glassball-assignment";
 
 app.use(cors({ credentials: true, origin: frontendUrl }));
 app.use(express.json());
