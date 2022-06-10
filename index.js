@@ -34,6 +34,10 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.send("Running");
+});
+
 app.post("/", (req, res) => {
   const query = req.body.regex;
   let { content } = req.body;
